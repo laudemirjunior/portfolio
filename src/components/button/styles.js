@@ -6,10 +6,13 @@ export const ButtonStyled = styled.button`
   border-style: none solid;
   border-width: 2px;
   border-color: ${(props) => (props.props ? "white" : "black")};
-  width: 150px;
+  max-width: 200px;
+  width: 100%;
+  min-width: 100px;
   height: 30px;
   font-size: 20px;
   margin: 30px auto;
+  padding: 0 10px;
   :hover {
     border-style: solid solid;
     transition: 0.2s ease-in-out;

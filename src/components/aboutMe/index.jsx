@@ -9,31 +9,41 @@ export default function AboutMe() {
   return (
     <MainContainer id="aboutMe">
       <Container>
-        <H1>ABOUT ME</H1>
+        <H1>SOBRE MIM</H1>
         <div className="infos">
           <p>
-            Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-            varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
-            quis libero viverra facilisis ut ac est.
+            Sou formado em Administração pela Isulpar e trabalhei 6 anos no
+            setor administrativo. Formado em Desenvolvedor Front-end e estudando
+            desenvolvimento Back-end na Kenzie Academy Brasil, onde estou
+            desenvolvendo muitas habilidades técnicas, mas também, desenvolvendo
+            muitas soft skills, muito importantes para meu crescimento
+            profissional e pessoal.
           </p>
-          <Button children="EXPLORE" props={false} />
+          <p>
+            Tecnologias: HTML, CSS, JavaScript (ES6+), React, React Native,
+            Redux-Thunk, TypeScript(TS + TSX), Vue.js, Node.js, Python, Flask,
+            APIRestful, POO, TDD, BDD (Cucumber), Git, SCRUM, e Heroku.
+          </p>
+          {/* <Button children="EXPLORE" props={false} /> */}
         </div>
         <Separator />
         <div className="cards">
           <div className="card">
             <FaWrench />
-            <h1>DEVELOPMENT</h1>
+            <h1>DESENVOLVIMENTO</h1>
             <p>
-              I can design the site based on your needs and suggestions. I can
-              also design the site from scratch and consult you during the job.
+              Posso projetar o site com base nas suas necessidades e sugestões.
+              Também posso projetar o site do zero e consultá-lo durante o
+              trabalho.
             </p>
           </div>
           <div className="card">
             <FaPencilAlt />
-            <h1>MAINTENANCE</h1>
+            <h1>MANUTENÇÃO</h1>
             <p>
-              I can design the site based on your needs and suggestions. I can
-              also design the site from scratch and consult you during the job.
+              Posso projetar o site com base nas suas necessidades e sugestões.
+              eu posso também desenhe o site do zero e consulte-o durante o
+              trabalho.
             </p>
           </div>
         </div>

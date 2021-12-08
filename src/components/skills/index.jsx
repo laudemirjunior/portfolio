@@ -9,10 +9,10 @@ export default function Skills() {
   return (
     <MainContainer id="skills">
       <Container>
-        <Title>SKILLS</Title>
+        <Title>HABILIDADES</Title>
         <div className="techs">
           <div className="text">
-            <h3>USING NOW:</h3>
+            <h3>USANDO AGORA:</h3>
           </div>
           <div className="tech">
             {usingNow.map((item) => {
@@ -27,7 +27,7 @@ export default function Skills() {
         </div>
         <div className="techs">
           <div className="text">
-            <h3>LEARNING:</h3>
+            <h3>APRENDENDO:</h3>
           </div>
           <div className="tech">
             {learning.map((item) => {
@@ -42,7 +42,7 @@ export default function Skills() {
         </div>
         <div className="techs">
           <div className="text">
-            <h3>OTHER SKILLS:</h3>
+            <h3>OUTRAS HABILIDADES :</h3>
           </div>
           <div className="tech">
             {othersSkills.map((item) => {

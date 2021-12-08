@@ -6,18 +6,20 @@ export default function About() {
   return (
     <MainContainer>
       <Container>
-        <h1>IT BERRIES</h1>
-        <p>
-          Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-          varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
-          quis libero viverra facilisis ut ac est. Morbi commodo, eros in
-          dignissim tempus, lacus odio rutrum augue, in semper sem magna quis
-          tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit.
-          Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet
-          varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
-          tempor, accumsan nec eros.{" "}
-        </p>
-        <Button children="READ MORE" />
+        <div className="info">
+          <h1>No momento</h1>
+          <p>
+            Atualmente trabalhando na Kenzie Academy Brasil ajudando os alunos
+            tirando suas dúvidas, fazendo correções de suas atividades e
+            acompanhando em projetos Front-end (HTML, CSS, JavaScript e React).
+          </p>
+        </div>
+        <div className="img">
+          <img
+            src="https://avatars.githubusercontent.com/u/85312375?v=4"
+            alt="myImage"
+          ></img>
+        </div>
       </Container>
     </MainContainer>
   );

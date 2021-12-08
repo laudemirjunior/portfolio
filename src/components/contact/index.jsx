@@ -4,12 +4,28 @@ import { Container } from "./styles";
 import Button from "../button";
 import Title from "../title";
 import Separator from "../separator";
+import toast from "react-hot-toast";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 export default function Contact() {
   const form = useRef();
+  const Schema = yup.object().shape({
+    name: yup.string().required("Nome obrigatório"),
+    email: yup.string().email("Email inválido").required("Email obrigatório"),
+    text: yup.string().required("Mensagem obrigatória"),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(Schema),
+  });
 
   const sendEmail = (e) => {
-    e.preventDefault();
     emailjs
       .sendForm(
         "service_kmcdpzo",
@@ -18,29 +34,47 @@ export default function Contact() {
         "user_THgHiEA3qHQdf2dKpIEH5"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          toast.success("Mensagem enviado com sucesso");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          toast.error("Enviado ao enviar sua mensagem");
         }
       );
   };
 
+  function onSubmitFunction(data, e) {
+    sendEmail(data);
+    e.target.reset();
+  }
+
   return (
     <Container id="contact">
-      <Title>Contact</Title>
-      <p>
-        Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
-        finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
-        viverra facilisis ut ac est.
-      </p>
+      <Title>Contato</Title>
+      <p>Você está com dúvidas ou precisa relatar um problema o site</p>
       <Separator />
-      <form ref={form} onSubmit={sendEmail}>
-        <input placeholder="Name" type="text" name="name" />
-        <input placeholder="Email" type="email" name="email" />
-        <textarea placeholder="Message" name="message" />
-        <Button type="submit" children="Submit" props={false} />
+      <form ref={form} onSubmit={handleSubmit(onSubmitFunction)}>
+        <input
+          placeholder="Digite seu nome"
+          type="text"
+          name="name"
+          {...register("name")}
+        />
+        <span>{errors.name?.message}</span>
+        <input
+          placeholder="Digite seu email"
+          type="email"
+          name="email"
+          {...register("email")}
+        />
+        <span>{errors.email?.message}</span>
+        <textarea
+          placeholder="Digite sua mensagem"
+          name="message"
+          {...register("text")}
+        />
+        <span>{errors.text?.message}</span>
+        <Button type="submit" children="Enviar" props={false} />
       </form>
     </Container>
   );

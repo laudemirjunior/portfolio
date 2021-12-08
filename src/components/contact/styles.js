@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
   form {
     width: 100%;
     max-width: 1500px;
@@ -29,6 +30,10 @@ export const Container = styled.div`
     textarea {
       height: 150px;
       resize: none;
+    }
+    span {
+      color: red;
+      font-size: 14px;
     }
   }
 `;

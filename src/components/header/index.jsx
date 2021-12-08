@@ -32,11 +32,11 @@ export default function Header() {
             </LogoBox>
           </a>
           <NavBox>
-            <a href="/#aboutMe">About me</a>
-            <a href="/#skills">Skills</a>
-            <a href="/#portfolio">Portfolio</a>
+            <a href="/#aboutMe">Sobre mim</a>
+            <a href="/#skills">Habilidades</a>
+            <a href="/#portfolio">Portfólio</a>
             <a className="dif" href="#contact">
-              CONTACT ME
+              CONTATE-ME
             </a>
           </NavBox>
           <Hamburguer onClick={change}>

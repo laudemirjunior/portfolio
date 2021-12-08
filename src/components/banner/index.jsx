@@ -8,18 +8,29 @@ export default function Banner() {
     <Container id="banner">
       <Data>
         <div className="info" id="banner">
-          <h3>Hi, I am</h3>
+          <h3>Olá, Eu sou</h3>
           <h1>Laudemir do Nascimento Junior</h1>
-          <h5>Front-end Developer</h5>
+          <h5>Desenvolvedor Front-end Júnior</h5>
           <div className="contact">
             <div>
-              <FaGithubSquare />
+              <a
+                href="https://github.com/laudemirjunior"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
+
+            <div>
+              <a href="https://www.linkedin.com/in/nlaudemir/">
+                <FaLinkedin />
+              </a>
             </div>
             <div>
-              <FaLinkedin />
-            </div>
-            <div>
-              <MdOutlineAlternateEmail />
+              <a href="mailto:nlaudemir@gmail.com? Subject=Título%20da%20mensagem">
+                <MdOutlineAlternateEmail />
+              </a>
             </div>
           </div>
         </div>

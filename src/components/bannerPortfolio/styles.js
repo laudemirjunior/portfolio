@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Image from "../../assets/images/image.jpg";
 
 export const Container = styled.div`
-  margin-top: 80px;
   width: 100%;
   height: 320px;
   background-image: url(${Image});

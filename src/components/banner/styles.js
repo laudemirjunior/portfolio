@@ -54,9 +54,14 @@ export const Data = styled.div`
       background-color: #c4c4c4;
       cursor: pointer;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      svg {
-        font-size: 24px;
-        color: black;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          font-size: 24px;
+          color: black;
+        }
       }
     }
   }

@@ -4,11 +4,11 @@ import { Container } from "./styles";
 export default function Menu() {
   return (
     <Container>
-      <a href="/">About me</a>
-      <a href="/">Skills</a>
-      <a href="/">Portfolio</a>
+      <a href="/">Sobre mim</a>
+      <a href="/">Habilidades</a>
+      <a href="/">Portfólio</a>
       <a className="dif" href="/">
-        CONTACT ME
+        CONTATE-ME
       </a>
     </Container>
   );
