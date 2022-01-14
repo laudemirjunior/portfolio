@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../button";
 import { Container, MainContainer } from "./styles";
 import H1 from "../title";
 import { FaWrench, FaPencilAlt } from "react-icons/fa";
@@ -12,19 +11,19 @@ export default function AboutMe() {
         <H1>SOBRE MIM</H1>
         <div className="infos">
           <p>
-            Sou formado em Administração pela Isulpar e trabalhei 6 anos no
-            setor administrativo. Formado em Desenvolvedor Front-end e estudando
-            desenvolvimento Back-end na Kenzie Academy Brasil, onde estou
-            desenvolvendo muitas habilidades técnicas, mas também, desenvolvendo
-            muitas soft skills, muito importantes para meu crescimento
-            profissional e pessoal.
+            Sempre fui apaixonado por tecnologia e tinha facilidade no contato
+            com novas tecnologias, mas nunca havia pensado em ter uma carreira
+            na área até me surgiu a oportunidade para estudar na Kenzie Academy
+            Brasil. Atualmente curso Desenvolvimento Full Stack na Kenzie, onde
+            realizo muitas entregas individuais e em grupo, desenvolvendo muitas
+            habilidades técnicas, mas também, muitas soft skills, muito
+            importantes para meu crescimento profissional e pessoal.
           </p>
           <p>
-            Tecnologias: HTML, CSS, JavaScript (ES6+), React, React Native,
-            Redux-Thunk, TypeScript(TS + TSX), Vue.js, Node.js, Python, Flask,
-            APIRestful, POO, TDD, BDD (Cucumber), Git, SCRUM, e Heroku.
+            Tecnologias: HTML, CSS, JavaScript, React, Vue, TypeScript, Python,
+            Flask, Git, Scrum, styled-components, Material-UI, Chakra UI e
+            Bootstrap.
           </p>
-          {/* <Button children="EXPLORE" props={false} /> */}
         </div>
         <Separator />
         <div className="cards">
@@ -41,9 +40,8 @@ export default function AboutMe() {
             <FaPencilAlt />
             <h1>MANUTENÇÃO</h1>
             <p>
-              Posso projetar o site com base nas suas necessidades e sugestões.
-              eu posso também desenhe o site do zero e consulte-o durante o
-              trabalho.
+              Posso fazer a manutenção do site, seguindo boas práticas de
+              mercado.
             </p>
           </div>
         </div>

@@ -14,10 +14,12 @@ export default function Header() {
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      setVis(true);
-    } else {
-      setVis(false);
+    if (show === false) {
+      if (prevScrollpos > currentScrollPos) {
+        setVis(true);
+      } else {
+        setVis(false);
+      }
     }
     prevScrollpos = currentScrollPos;
   };
@@ -35,7 +37,7 @@ export default function Header() {
             <a href="/#aboutMe">Sobre mim</a>
             <a href="/#skills">Habilidades</a>
             <a href="/#portfolio">Portfólio</a>
-            <a className="dif" href="#contact">
+            <a className="dif" href="/#contact">
               CONTATE-ME
             </a>
           </NavBox>

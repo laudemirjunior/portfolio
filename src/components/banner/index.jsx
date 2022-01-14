@@ -33,6 +33,7 @@ export default function Banner() {
               </a>
             </div>
           </div>
+          <b> Telefone: (41) 99193-3980</b>
         </div>
         <div className="img"></div>
       </Data>

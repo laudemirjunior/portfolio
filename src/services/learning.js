@@ -15,4 +15,8 @@ export const learning = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
     name: "Flask",
   },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    name: "Next.js",
+  },
 ];

@@ -22,10 +22,10 @@ export default function PortfolioHome() {
 
                   <div>
                     <a href={item.vercel} target="_blank" rel="noreferrer">
-                      <Button children="Site" props={false} />
+                      <Button children="Vercel" props={false} />
                     </a>
                     <a href={item.gitHub} target="_blank" rel="noreferrer">
-                      <Button children="Code" props={false} />
+                      <Button children="GitHub" props={false} />
                     </a>
                   </div>
                 </div>
@@ -35,7 +35,7 @@ export default function PortfolioHome() {
         </div>
         <div className="more">
           <Button
-            children={"Mais projetos"}
+            children={"Mais informações"}
             onClick={() => history.push("/projects")}
           ></Button>
         </div>
