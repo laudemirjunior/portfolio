@@ -14,7 +14,7 @@ export const ButtonStyled = styled.button`
   margin: 30px auto;
   padding: 0 10px;
   :hover {
-    border-style: solid solid;
-    transition: 0.2s ease-in-out;
+    border-style: solid;
+    transition: 0.01s;
   }
 `;

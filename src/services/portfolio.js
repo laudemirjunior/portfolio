@@ -32,7 +32,7 @@ export const portfolio = [
     vercel: "https://react-entrega-s3-kenzieshop-laudemirjunior.vercel.app/",
     gitHub:
       "https://github.com/laudemirjunior/react-entrega-s3-kenzieshop-laudemirjunior",
-    hashtags: "#JavaScript",
+    hashtags: "React e Context-API",
   },
   {
     img: Burguer,

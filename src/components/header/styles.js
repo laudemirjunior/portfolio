@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const op = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -8,10 +17,10 @@ export const Container = styled.div`
   z-index: 2;
   top: 0;
   background-color: black;
+  animation: ${op} 1s linear;
 `;
 
 export const HeaderStyled = styled.div`
-  transition: top 0.3s;
   width: inherit;
   max-width: 1500px;
   width: 90%;

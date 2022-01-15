@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { portfolio } from "../../services/portfolio";
 import { Container, Cards, Card } from "./styles";
 import { useHistory } from "react-router-dom";
+import { BsInfoCircle } from "react-icons/bs";
 import Button from "../button";
 import BannerPortfolio from "../bannerPortfolio";
+import Modal from "../modal";
 
 export default function PortfolioHome() {
   const history = useHistory();
+  const [info, setInfo] = useState([]);
+  const [show, setShow] = useState(false);
+
   return (
     <Container id="portfolio">
       <BannerPortfolio />
@@ -19,7 +24,12 @@ export default function PortfolioHome() {
                 <div className="infos">
                   <h4>{item.title}</h4>
                   <h5>{item.hashtags}</h5>
-
+                  <BsInfoCircle
+                    onClick={() => {
+                      setInfo([item.title, item.description]);
+                      setShow(true);
+                    }}
+                  />
                   <div>
                     <a href={item.vercel} target="_blank" rel="noreferrer">
                       <Button children="Vercel" props={false} />
@@ -32,10 +42,11 @@ export default function PortfolioHome() {
               </Card>
             );
           })}
+          {show && <Modal info={info} setShow={setShow} />}
         </div>
         <div className="more">
           <Button
-            children={"Mais informações"}
+            children={"Mais projetos"}
             onClick={() => history.push("/projects")}
           ></Button>
         </div>

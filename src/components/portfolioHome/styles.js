@@ -29,7 +29,6 @@ export const Cards = styled.div`
 `;
 
 export const Card = styled.div`
-  cursor: pointer;
   height: 230px;
   width: 300px;
   margin: auto;
@@ -49,6 +48,14 @@ export const Card = styled.div`
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
     div {
       display: flex;
       a {

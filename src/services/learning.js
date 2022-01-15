@@ -1,5 +1,9 @@
 export const learning = [
   {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    name: "React Native",
+  },
+  {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     name: "Vue.js",
   },

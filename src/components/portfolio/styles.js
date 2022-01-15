@@ -45,6 +45,9 @@ export const MainContainer = styled.div`
       margin: 5px;
       cursor: pointer;
     }
+    a {
+      color: black;
+    }
   }
   .more {
     width: inherit;

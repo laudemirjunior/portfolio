@@ -29,8 +29,12 @@ export default function Portfolio() {
                 <p>{item.description}</p>
                 <p>{item.hashtags}</p>
                 <div className="links">
-                  <SiVercel href={item.vercel} />
-                  <AiFillGithub href={item.gitHub} />
+                  <a href={item.vercel} target="_blank" rel="noreferrer">
+                    <SiVercel />
+                  </a>
+                  <a href={item.gitHub} target="_blank" rel="noreferrer">
+                    <AiFillGithub />
+                  </a>
                 </div>
               </div>
             </div>
