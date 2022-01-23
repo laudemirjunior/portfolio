@@ -1,23 +1,17 @@
-import styled, { keyframes } from "styled-components";
-
-const op = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  display: ${(props) => (props.vis ? "flex" : "none")};
+  display: flex;
+  opacity: ${(props) => (props.vis ? "1" : "0")};
+  margin-top: ${(props) => (props.vis ? "0" : "-80px")};
   justify-content: center;
   position: fixed;
   z-index: 2;
   top: 0;
   background-color: black;
-  animation: ${op} 1s linear;
+  transition: 1s;
+  animation-direction: alternate;
 `;
 
 export const HeaderStyled = styled.div`
