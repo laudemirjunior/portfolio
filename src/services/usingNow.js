@@ -21,7 +21,7 @@ export const usingNow = [
   },
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-    name: "Sass",
+    name: "SASS",
   },
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
@@ -38,5 +38,9 @@ export const usingNow = [
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
     name: "Linux",
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    name: "Bootstrap",
   },
 ];

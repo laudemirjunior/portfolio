@@ -23,4 +23,8 @@ export const learning = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     name: "Next.js",
   },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    name: "MongoDB",
+  },
 ];

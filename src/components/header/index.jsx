@@ -34,6 +34,7 @@ export default function Header() {
             </LogoBox>
           </a>
           <NavBox>
+            <a href="/projects">Todos os projetos</a>
             <a href="/#aboutMe">Sobre mim</a>
             <a href="/#skills">Habilidades</a>
             <a href="/#portfolio">Portfólio</a>

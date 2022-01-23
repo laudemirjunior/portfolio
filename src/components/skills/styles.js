@@ -32,9 +32,8 @@ export const Container = styled.div`
   }
   .tech {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 75px;
     width: 100%;
     max-width: 800px;
     div {
@@ -43,6 +42,10 @@ export const Container = styled.div`
       align-items: center;
       flex-direction: column;
       gap: 20px;
+    }
+    h4 {
+      width: 100px;
+      text-align: center;
     }
   }
 `;

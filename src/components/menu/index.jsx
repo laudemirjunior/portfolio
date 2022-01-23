@@ -4,6 +4,7 @@ import { Container } from "./styles";
 export default function Menu() {
   return (
     <Container>
+      <a href="/projects">Todos os projetos</a>
       <a href="/#aboutMe">Sobre mim</a>
       <a href="/#skills">Habilidades</a>
       <a href="/#portfolio">Portfólio</a>

@@ -20,9 +20,10 @@ export default function AboutMe() {
             importantes para meu crescimento profissional e pessoal.
           </p>
           <p>
-            Tecnologias: HTML, CSS, JavaScript, React, Vue, TypeScript, Python,
-            Flask, Git, Scrum, styled-components, Material-UI, Chakra UI e
-            Bootstrap.
+            Tecnologias: HTML | CSS | JavaScript | React | Redux | TypeScript |
+            Vue.js | Python | Flask | MongoDB | Git | Scrum | styled-components
+            | SASS | Material-UI | Chakra UI | Bootstrap | TDD | BDD | RESTful
+            API
           </p>
         </div>
         <Separator />

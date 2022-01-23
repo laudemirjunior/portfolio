@@ -33,7 +33,7 @@ export const LogoBox = styled.div`
 export const NavBox = styled.div`
   display: none;
   a {
-    padding: 8px 25px;
+    padding: 8px 15px;
     color: white;
   }
   .dif {
@@ -41,7 +41,7 @@ export const NavBox = styled.div`
     color: black;
     border-radius: 30px;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     display: flex;
   }
 `;
@@ -53,7 +53,7 @@ export const Hamburguer = styled.div`
     font-size: 40px;
     color: white;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
     display: none;
   }
 `;
