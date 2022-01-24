@@ -46,11 +46,7 @@ export default function Header() {
                   CONTATE-ME
                 </a>
               </>
-            ) : (
-              <Link className="dif" to="/">
-                Voltar
-              </Link>
-            )}
+            ) : null}
           </NavBox>
           {location === "/" ? (
             <Hamburguer onClick={change}>
