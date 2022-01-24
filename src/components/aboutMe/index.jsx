@@ -3,6 +3,7 @@ import { Container, MainContainer } from "./styles";
 import H1 from "../title";
 import { FaWrench, FaPencilAlt } from "react-icons/fa";
 import Separator from "../separator";
+import Button from "../button";
 
 export default function AboutMe() {
   return (
@@ -25,6 +26,15 @@ export default function AboutMe() {
             Scrum | styled-components | SASS | Material-UI | Chakra UI |
             Bootstrap | TDD | BDD
           </p>
+          <Button props={false}>
+            <a
+              href="https://www.canva.com/design/DAEyDsBZt_Q/XtE-gSsV5LQIeQ8OPTeOng/view?utm_content=DAEyDsBZt_Q&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Currículo
+            </a>
+          </Button>
         </div>
         <Separator />
         <div className="cards">

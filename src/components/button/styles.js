@@ -13,6 +13,9 @@ export const ButtonStyled = styled.button`
   font-size: 20px;
   margin: 30px auto;
   padding: 0 10px;
+  a {
+    color: ${(props) => (props.props ? "white" : "black")};
+  }
   :hover {
     border-style: solid;
     transition: 0.01s;
