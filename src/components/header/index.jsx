@@ -30,11 +30,11 @@ export default function Header() {
     <>
       <Container vis={vis}>
         <HeaderStyled>
-          <a href="/#banner">
+          <Link to="/">
             <LogoBox>
               <img src={logo} alt="logo" />
             </LogoBox>
-          </a>
+          </Link>
           <NavBox>
             {location === "/" ? (
               <>

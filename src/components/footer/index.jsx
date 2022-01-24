@@ -6,12 +6,16 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 export default function Footer() {
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <Container>
       <div className="back">
-        <a href="/#banner">
+        <p onClick={scrollTop}>
           <BsChevronDoubleUp />
-        </a>
+        </p>
         <h3>VOLTAR AO TOPO</h3>
       </div>
       <div className="icons">
