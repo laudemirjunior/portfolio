@@ -10,7 +10,8 @@ export default function About() {
           <h1>No momento</h1>
           <p>
             Atualmente estou estudando Desenvolvimento back-end na Kenzie
-            Academy Brasil.
+            Academy Brasil e busco uma oportunidade no mercado de trabalho com
+            Desenvolvedor.
           </p>
         </div>
         <div className="img">

@@ -49,7 +49,7 @@ export default function PortfolioHome() {
         </div>
         <div className="more">
           <Button
-            children={"Mais projetos"}
+            children={"Todos os projetos"}
             onClick={() => history.push("/projects")}
           ></Button>
         </div>

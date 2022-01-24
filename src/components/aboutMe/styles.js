@@ -23,7 +23,6 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    text-align: center;
     margin: auto;
   }
   .cards {

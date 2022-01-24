@@ -10,7 +10,7 @@ export const MainContainer = styled.div`
 
 export const Container = styled.div`
   width: 90%;
-  min-height: 250px;
+  min-height: 200px;
   max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr;

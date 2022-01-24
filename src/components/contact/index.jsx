@@ -69,6 +69,7 @@ export default function Contact() {
         />
         <span>{errors.email?.message}</span>
         <textarea
+          minLength={10}
           placeholder="Digite sua mensagem"
           name="message"
           {...register("text")}

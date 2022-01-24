@@ -38,7 +38,6 @@ export default function Header() {
           <NavBox>
             {location === "/" ? (
               <>
-                <Link to="/projects">Projetos</Link>
                 <a href="#aboutMe">Sobre mim</a>
                 <a href="#skills">Habilidades</a>
                 <a href="#portfolio">Portfólio</a>

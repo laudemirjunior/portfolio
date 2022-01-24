@@ -20,10 +20,10 @@ export default function AboutMe() {
             importantes para meu crescimento profissional e pessoal.
           </p>
           <p>
-            Tecnologias: HTML | CSS | JavaScript | React | Redux | TypeScript |
-            Vue.js | Python | Flask | MongoDB | Git | Scrum | styled-components
-            | SASS | Material-UI | Chakra UI | Bootstrap | TDD | BDD | RESTful
-            API
+            Tecnologias: HTML | CSS | JavaScript | React | Redux | Context API |
+            TypeScript | Vue.js | Python | Flask | MongoDB | PostgreSQL | Git |
+            Scrum | styled-components | SASS | Material-UI | Chakra UI |
+            Bootstrap | TDD | BDD
           </p>
         </div>
         <Separator />
