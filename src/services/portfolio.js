@@ -75,7 +75,7 @@ export const portfolio = [
   {
     img: DoIt,
     description: "Aplicação voltada a gestão de atividades e hábitos.",
-    title: "DoIt",
+    title: "Do it",
     vercel: "https://do-it-gray.vercel.app/",
     gitHub: "https://github.com/laudemirjunior/do-it-second",
     hashtags: "React, TypeScript, Context-API e Chakra UI ",
@@ -95,7 +95,7 @@ export const portfolio = [
     img: BuscandoPersonagens,
     description:
       "Uso do método de montagem utilizando o useEffect para fazer uma requisição na API assim que a página é renderizada.",
-    title: "Buscando Personagens",
+    title: "Buscando personagens",
     vercel:
       "https://react-atividade-s1-buscando-dados-na-api-rick-and-mo-gbukmirzm.vercel.app/",
     gitHub:
