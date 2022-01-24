@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.png";
 import Menu from "../menu";
 import { Container, HeaderStyled, LogoBox, NavBox, Hamburguer } from "./styles";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
   const [show, setShow] = useState(false);
@@ -10,6 +11,7 @@ export default function Header() {
   const change = () => {
     setShow(!show);
   };
+  let location = useLocation().pathname;
 
   let prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -34,17 +36,31 @@ export default function Header() {
             </LogoBox>
           </a>
           <NavBox>
-            <a href="/projects">Todos os projetos</a>
-            <a href="/#aboutMe">Sobre mim</a>
-            <a href="/#skills">Habilidades</a>
-            <a href="/#portfolio">Portfólio</a>
-            <a className="dif" href="/#contact">
-              CONTATE-ME
-            </a>
+            {location === "/" ? (
+              <>
+                <Link to="/projects">Projetos</Link>
+                <a href="#aboutMe">Sobre mim</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#portfolio">Portfólio</a>
+                <a className="dif" href="/#contact">
+                  CONTATE-ME
+                </a>
+              </>
+            ) : (
+              <Link className="dif" to="/">
+                Voltar
+              </Link>
+            )}
           </NavBox>
-          <Hamburguer onClick={change}>
-            {show ? <FaTimes /> : <FaBars />}
-          </Hamburguer>
+          {location === "/" ? (
+            <Hamburguer onClick={change}>
+              {show ? <FaTimes /> : <FaBars />}
+            </Hamburguer>
+          ) : (
+            <Link className="dif" to="/">
+              Voltar
+            </Link>
+          )}
         </HeaderStyled>
       </Container>
       {show ? <Menu /> : null}

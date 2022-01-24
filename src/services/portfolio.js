@@ -1,9 +1,14 @@
-import Habits from "../assets/images/habits.jpg";
-import Tranqyl from "../assets/images/tranqyl.jpg";
-import Shop from "../assets/images/shop.jpg";
-import Burguer from "../assets/images/burguer.jpg";
-import Hamburgueria from "../assets/images/Hamburgueria.jpg";
-import Lig4 from "../assets/images/Lig4.jpg";
+import Habits from "../assets/images/habits.png";
+import Tranqyl from "../assets/images/tranqyl.png";
+import Shop from "../assets/images/shop.png";
+import Burguer from "../assets/images/burguer.png";
+import Hamburgueria from "../assets/images/hamburgueria.png";
+import Lig4 from "../assets/images/Lig4.png";
+import DoIt from "../assets/images/do-it.png";
+import AdministracaoDeEventos from "../assets/images/administração-de-eventos.png";
+import BuscandoPersonagens from "../assets/images/buscando-personagens.png";
+import Caravan from "../assets/images/caravan.png";
+import Techno from "../assets/images/techno.png";
 
 export const portfolio = [
   {
@@ -13,7 +18,7 @@ export const portfolio = [
     title: "Habits",
     vercel: "https://projeto-gestao-de-habitos-eta.vercel.app/",
     gitHub: "https://github.com/laudemirjunior/daily-health",
-    hashtags: "React Context-API",
+    hashtags: "React e Context API",
   },
   {
     img: Tranqyl,
@@ -22,7 +27,7 @@ export const portfolio = [
     title: "Tranqyl",
     vercel: "https://tranqly-capstone-osmg6nnsa-gabrielguti.vercel.app/",
     gitHub: "https://github.com/gabrielguti/tranqly-capstone",
-    hashtags: "React, Typescript e Context-API",
+    hashtags: "React, TypeScript e Context API",
   },
   {
     img: Shop,
@@ -43,7 +48,7 @@ export const portfolio = [
       "https://react-entrega-s5-hamburgueria-2-0-com-typescript-jso-3yxq1da12.vercel.app/",
     gitHub:
       "https://github.com/laudemirjunior/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-laudemirjunior",
-    hashtags: "React, Typescript e Context-API",
+    hashtags: "React, TypeScript e Context-API",
   },
   {
     img: Hamburgueria,
@@ -65,6 +70,52 @@ export const portfolio = [
       "https://kenzie-academy-brasil-developers.github.io/entrega-lig-4-sprint-5-guimaraesalves/",
     gitHub:
       "https://github.com/laudemirjunior/entrega-lig-4-sprint-5-guimaraesalves",
-    hashtags: "JS, HTML e CSS",
+    hashtags: "JavaScript, HTML e CSS",
+  },
+  {
+    img: DoIt,
+    description: "Aplicação voltada a gestão de atividades e hábitos.",
+    title: "DoIt",
+    vercel: "https://do-it-gray.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/do-it-second",
+    hashtags: "React, TypeScript, Context-API e Chakra UI ",
+  },
+  {
+    img: AdministracaoDeEventos,
+    description:
+      "Plataforma que auxilie a administração de bebidas para eventos. O administrador precisa selecionar quais bebidas vão para cada evento e verificar a lista de cada evento.",
+    title: "Administração De Eventos",
+    vercel:
+      "https://react-entrega-s3-administracao-de-eventos-laudemirju-g5kmqjagf.vercel.app/",
+    gitHub:
+      "https://github.com/laudemirjunior/react-entrega-s3-administracao-de-eventos-laudemirjunior",
+    hashtags: "React, TypeScript e Context-API",
+  },
+  {
+    img: BuscandoPersonagens,
+    description:
+      "Uso do método de montagem utilizando o useEffect para fazer uma requisição na API assim que a página é renderizada.",
+    title: "Buscando Personagens",
+    vercel:
+      "https://react-atividade-s1-buscando-dados-na-api-rick-and-mo-gbukmirzm.vercel.app/",
+    gitHub:
+      "https://github.com/laudemirjunior/react-atividade-s1-buscando-mais-personagens-laudemirjunior",
+    hashtags: "React e consumo de API",
+  },
+  {
+    img: Caravan,
+    description: "Plataforma para viagens com apresentação de vários destinos",
+    title: "Caravan",
+    vercel: "https://laudemirjunior.github.io/caravan/",
+    gitHub: "https://github.com/laudemirjunior/caravan",
+    hashtags: "HTML e Bootstrap",
+  },
+  {
+    img: Techno,
+    description: "Plataforma para venda de produtos tecnológicos.",
+    title: "Techno",
+    vercel: "https://laudemirjunior.github.io/techno/",
+    gitHub: "https://github.com/laudemirjunior/techno",
+    hashtags: "Vue.js e CSS",
   },
 ];

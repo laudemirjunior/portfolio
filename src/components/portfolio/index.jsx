@@ -15,31 +15,32 @@ export default function Portfolio() {
     <MainContainer id="portfolio">
       <BannerPortfolio />
       <div className="projects">
-        {portfolio.map((item, index) => {
-          console.log(index / 2 !== 0);
-          return (
-            <div
-              className="project"
-              data-aos="zoom-in-up"
-              data-aos-duration="1000"
-            >
-              <img src={item.img} alt="Burguer" />
-              <div className="infos">
-                <h1>{item.title}</h1>
-                <p>{item.description}</p>
-                <p>{item.hashtags}</p>
-                <div className="links">
-                  <a href={item.vercel} target="_blank" rel="noreferrer">
-                    <SiVercel />
-                  </a>
-                  <a href={item.gitHub} target="_blank" rel="noreferrer">
-                    <AiFillGithub />
-                  </a>
+        {portfolio
+          .sort(() => 0.5 - Math.random())
+          .map((item, index) => {
+            return (
+              <div
+                className="project"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
+                <img src={item.img} alt="Burguer" />
+                <div className="infos">
+                  <h1>{item.title}</h1>
+                  <p>{item.description}</p>
+                  <p>{item.hashtags}</p>
+                  <div className="links">
+                    <a href={item.vercel} target="_blank" rel="noreferrer">
+                      <SiVercel />
+                    </a>
+                    <a href={item.gitHub} target="_blank" rel="noreferrer">
+                      <AiFillGithub />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </MainContainer>
   );

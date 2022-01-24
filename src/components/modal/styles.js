@@ -13,7 +13,7 @@ export const Container = styled.div`
   .card {
     width: 90%;
     max-width: 400px;
-    height: 240px;
+    min-height: 240px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(20px);

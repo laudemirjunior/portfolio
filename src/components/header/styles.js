@@ -12,6 +12,12 @@ export const Container = styled.div`
   background-color: black;
   transition: 1s;
   animation-direction: alternate;
+  .dif {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+  }
 `;
 
 export const HeaderStyled = styled.div`
@@ -36,11 +42,7 @@ export const NavBox = styled.div`
     padding: 8px 15px;
     color: white;
   }
-  .dif {
-    background-color: white;
-    color: black;
-    border-radius: 30px;
-  }
+
   @media (min-width: 800px) {
     display: flex;
   }

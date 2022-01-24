@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Image from "../../assets/images/image.jpg";
+import Banner from "../../assets/images/banner.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(${Image});
+  background-image: url(${Banner});
   background-size: cover;
   background-position: 60%;
 `;

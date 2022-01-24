@@ -1,10 +1,11 @@
 import React from "react";
 import { Container } from "./styles";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   return (
     <Container>
-      <a href="/projects">Todos os projetos</a>
+      <Link to="/projects">Todos os projetos</Link>
       <a href="/#aboutMe">Sobre mim</a>
       <a href="/#skills">Habilidades</a>
       <a href="/#portfolio">Portfólio</a>
