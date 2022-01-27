@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { MainContainer } from "./styles";
-import { SiVercel } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import { portfolio } from "../../services/portfolio";
 import BannerPortfolio from "../bannerPortfolio";
 import Aos from "aos";
@@ -30,8 +29,8 @@ export default function Portfolio() {
                   <p>{item.description}</p>
                   <p>{item.hashtags}</p>
                   <div className="links">
-                    <a href={item.vercel} target="_blank" rel="noreferrer">
-                      <SiVercel />
+                    <a href={item.site} target="_blank" rel="noreferrer">
+                      <AiOutlineLink />
                     </a>
                     <a href={item.gitHub} target="_blank" rel="noreferrer">
                       <AiFillGithub />

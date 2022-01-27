@@ -30,16 +30,6 @@ export const portfolio = [
     hashtags: "React, TypeScript e Context API",
   },
   {
-    img: Shop,
-    description:
-      "Simulação de e-commerce para uma loja de eletrônicos com carrinho de compras.",
-    title: "Shop",
-    vercel: "https://react-entrega-s3-kenzieshop-laudemirjunior.vercel.app/",
-    gitHub:
-      "https://github.com/laudemirjunior/react-entrega-s3-kenzieshop-laudemirjunior",
-    hashtags: "React e Context-API",
-  },
-  {
     img: Burguer,
     description:
       "Projeto de e-commerce para venda de hambúrgueres para cliente cadastrados, utilizando API criada com JSON.server",
@@ -51,42 +41,45 @@ export const portfolio = [
     hashtags: "React, TypeScript e Context-API",
   },
   {
-    img: Hamburgueria,
-    description:
-      "Uma aplicação que simula uma hamburgueria, o cliente pode se cadastrar e deixar seus itens salvos no carrinho.",
-    title: "Hamburgueria",
-    vercel:
-      "https://react-entrega-s1-hamburgueria-da-kenzie-laudemirjunior.vercel.app/",
-    gitHub:
-      "https://github.com/laudemirjunior/react-entrega-s1-hamburgueria-da-kenzie-laudemirjunior",
-    hashtags: "React e Context-API",
+    img: Caravan,
+    description: "Plataforma para viagens com apresentação de vários destinos",
+    title: "Caravan",
+    site: "https://laudemirjunior.github.io/caravan/",
+    gitHub: "https://github.com/laudemirjunior/caravan",
+    hashtags: "HTML e Bootstrap",
+  },
+  {
+    img: Techno,
+    description: "Plataforma para venda de produtos tecnológicos.",
+    title: "Techno",
+    site: "https://laudemirjunior.github.io/techno/",
+    gitHub: "https://github.com/laudemirjunior/techno",
+    hashtags: "Vue.js e CSS",
+  },
+  {
+    img: DoIt,
+    description: "Aplicação voltada a gestão de atividades e hábitos.",
+    title: "Do it",
+    site: "https://do-it-gray.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/do-it-second",
+    hashtags: "React, TypeScript, Context-API e Chakra UI ",
   },
   {
     img: Lig4,
     description:
       "Trabalho consistia em replicar o jogo Lig-4. Utilizamos o scrum para organizar o projeto, e atuei como Tech Leader.",
     title: "Deslig-4",
-    vercel:
-      "https://kenzie-academy-brasil-developers.github.io/entrega-lig-4-sprint-5-guimaraesalves/",
+    site: "https://kenzie-academy-brasil-developers.github.io/entrega-lig-4-sprint-5-guimaraesalves/",
     gitHub:
       "https://github.com/laudemirjunior/entrega-lig-4-sprint-5-guimaraesalves",
     hashtags: "JavaScript, HTML e CSS",
   },
   {
-    img: DoIt,
-    description: "Aplicação voltada a gestão de atividades e hábitos.",
-    title: "Do it",
-    vercel: "https://do-it-gray.vercel.app/",
-    gitHub: "https://github.com/laudemirjunior/do-it-second",
-    hashtags: "React, TypeScript, Context-API e Chakra UI ",
-  },
-  {
     img: AdministracaoDeEventos,
     description:
       "Plataforma que auxilie a administração de bebidas para eventos. O administrador precisa selecionar quais bebidas vão para cada evento e verificar a lista de cada evento.",
-    title: "Administração De Eventos",
-    vercel:
-      "https://react-entrega-s3-administracao-de-eventos-laudemirju-g5kmqjagf.vercel.app/",
+    title: "Administração de Eventos",
+    site: "https://react-entrega-s3-administracao-de-eventos-laudemirju-g5kmqjagf.vercel.app/",
     gitHub:
       "https://github.com/laudemirjunior/react-entrega-s3-administracao-de-eventos-laudemirjunior",
     hashtags: "React, TypeScript e Context-API",
@@ -96,26 +89,29 @@ export const portfolio = [
     description:
       "Uso do método de montagem utilizando o useEffect para fazer uma requisição na API assim que a página é renderizada.",
     title: "Buscando personagens",
-    vercel:
-      "https://react-atividade-s1-buscando-dados-na-api-rick-and-mo-gbukmirzm.vercel.app/",
+    site: "https://react-atividade-s1-buscando-dados-na-api-rick-and-mo-gbukmirzm.vercel.app/",
     gitHub:
       "https://github.com/laudemirjunior/react-atividade-s1-buscando-mais-personagens-laudemirjunior",
-    hashtags: "React e consumo de API",
+    hashtags: "React e Rest API",
   },
   {
-    img: Caravan,
-    description: "Plataforma para viagens com apresentação de vários destinos",
-    title: "Caravan",
-    vercel: "https://laudemirjunior.github.io/caravan/",
-    gitHub: "https://github.com/laudemirjunior/caravan",
-    hashtags: "HTML e Bootstrap",
+    img: Shop,
+    description:
+      "Simulação de e-commerce para uma loja de eletrônicos com carrinho de compras.",
+    title: "Shop",
+    site: "https://react-entrega-s3-kenzieshop-laudemirjunior.vercel.app/",
+    gitHub:
+      "https://github.com/laudemirjunior/react-entrega-s3-kenzieshop-laudemirjunior",
+    hashtags: "React e Context-API",
   },
   {
-    img: Techno,
-    description: "Plataforma para venda de produtos tecnológicos.",
-    title: "Techno",
-    vercel: "https://laudemirjunior.github.io/techno/",
-    gitHub: "https://github.com/laudemirjunior/techno",
-    hashtags: "Vue.js e CSS",
+    img: Hamburgueria,
+    description:
+      "Uma aplicação que simula uma hamburgueria, o cliente pode se cadastrar e deixar seus itens salvos no carrinho.",
+    title: "Hamburgueria",
+    site: "https://react-entrega-s1-hamburgueria-da-kenzie-laudemirjunior.vercel.app/",
+    gitHub:
+      "https://github.com/laudemirjunior/react-entrega-s1-hamburgueria-da-kenzie-laudemirjunior",
+    hashtags: "React e Context-API",
   },
 ];

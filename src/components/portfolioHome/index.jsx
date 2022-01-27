@@ -18,33 +18,30 @@ export default function PortfolioHome() {
       <Cards>
         <p>Principais projetos</p>
         <div className="ContainerCards">
-          {portfolio
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 6)
-            .map((item) => {
-              return (
-                <Card style={{ backgroundImage: `url(${item.img})` }}>
-                  <div className="infos">
-                    <h4>{item.title}</h4>
-                    <h5>{item.hashtags}</h5>
-                    <BsInfoCircle
-                      onClick={() => {
-                        setInfo([item.title, item.description]);
-                        setShow(true);
-                      }}
-                    />
-                    <div>
-                      <a href={item.vercel} target="_blank" rel="noreferrer">
-                        <Button children="Vercel" props={false} />
-                      </a>
-                      <a href={item.gitHub} target="_blank" rel="noreferrer">
-                        <Button children="GitHub" props={false} />
-                      </a>
-                    </div>
+          {portfolio.slice(0, 6).map((item) => {
+            return (
+              <Card style={{ backgroundImage: `url(${item.img})` }}>
+                <div className="infos">
+                  <h4>{item.title}</h4>
+                  <h5>{item.hashtags}</h5>
+                  <BsInfoCircle
+                    onClick={() => {
+                      setInfo([item.title, item.description, item.hashtags]);
+                      setShow(true);
+                    }}
+                  />
+                  <div>
+                    <a href={item.site} target="_blank" rel="noreferrer">
+                      <Button children="Site" props={false} />
+                    </a>
+                    <a href={item.gitHub} target="_blank" rel="noreferrer">
+                      <Button children="GitHub" props={false} />
+                    </a>
                   </div>
-                </Card>
-              );
-            })}
+                </div>
+              </Card>
+            );
+          })}
           {show && <Modal info={info} setShow={setShow} />}
         </div>
         <div className="more">

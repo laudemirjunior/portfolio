@@ -22,6 +22,7 @@ export const Container = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
   h2,
+  h3,
   p {
     margin: 20px;
     color: black;

@@ -41,6 +41,7 @@ export const Card = styled.div`
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     width: 90%;
     height: 90%;
     background: rgba(255, 255, 255, 0.25);
