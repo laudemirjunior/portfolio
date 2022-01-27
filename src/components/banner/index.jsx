@@ -10,7 +10,7 @@ export default function Banner() {
         <div className="info" id="banner">
           <h3>Olá, Eu sou</h3>
           <h1>Laudemir do Nascimento Junior</h1>
-          <h5>Desenvolvedor Front-end Júnior</h5>
+          <h5>Desenvolvedor Full Stack</h5>
           <div className="contact">
             <div>
               <a
@@ -33,7 +33,7 @@ export default function Banner() {
               </a>
             </div>
           </div>
-          <b> Telefone: (41) 99193-3980</b>
+          <b> Telefone: (41) 99193 3980</b>
         </div>
         <div className="img"></div>
       </Data>
