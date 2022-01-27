@@ -4,10 +4,6 @@ export const learning = [
     name: "React Native",
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    name: "Next.js",
-  },
-  {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     name: "Vue.js",
   },
@@ -30,5 +26,9 @@ export const learning = [
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     name: "PostgreSQL",
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    name: "MySQL",
   },
 ];

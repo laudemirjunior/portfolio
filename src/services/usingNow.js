@@ -25,22 +25,10 @@ export const usingNow = [
   },
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    name: "git",
-  },
-  {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-    name: "Figma",
+    name: "Git",
   },
   {
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     name: "Redux",
-  },
-  {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-    name: "Linux",
-  },
-  {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-    name: "Bootstrap",
   },
 ];
