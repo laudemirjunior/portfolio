@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import { Container } from "./styles";
 import Button from "../button";
 import Title from "../title";
-import Separator from "../separator";
 import toast from "react-hot-toast";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
@@ -51,8 +50,8 @@ export default function Contact() {
   return (
     <Container id="contact">
       <Title>Contato</Title>
-      <p>Você está com dúvidas ou precisa relatar um problema o site</p>
-      <Separator />
+      {/* <p>Você está com dúvidas ou precisa relatar um problema o site</p>
+      <Separator /> */}
       <form ref={form} onSubmit={handleSubmit(onSubmitFunction)}>
         <input
           placeholder="Digite seu nome"

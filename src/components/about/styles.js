@@ -14,8 +14,10 @@ export const Container = styled.div`
   max-width: 1500px;
   display: grid;
   grid-template-columns: 1fr;
-
   .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     h1,
     p {
       color: white;
@@ -26,6 +28,9 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (min-width: 600px) {
+      justify-content: flex-end;
+    }
     img {
       width: 200px;
       height: 200px;
@@ -33,6 +38,6 @@ export const Container = styled.div`
     }
   }
   @media (min-width: 600px) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
   }
 `;

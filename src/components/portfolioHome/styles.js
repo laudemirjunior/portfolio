@@ -25,6 +25,7 @@ export const Cards = styled.div`
   p {
     color: white;
     margin: 20px 0;
+    font-size: 30px;
   }
 `;
 

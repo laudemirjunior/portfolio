@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
   .text {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     h3 {
       margin: 60px 0;
     }
@@ -33,9 +33,9 @@ export const Container = styled.div`
   .tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 60px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     div {
       display: flex;
       justify-content: center;

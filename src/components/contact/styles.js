@@ -18,7 +18,7 @@ export const Container = styled.div`
     input,
     textarea {
       width: 90%;
-      max-width: 600px;
+      max-width: 900px;
       height: 50px;
       background-color: transparent;
       border-style: none none solid solid;

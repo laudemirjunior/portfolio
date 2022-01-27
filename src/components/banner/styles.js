@@ -15,9 +15,8 @@ export const Container = styled.div`
 
 export const Data = styled.div`
   display: flex;
-  justify-content: center;
   height: inherit;
-  width: inherit;
+  width: 90%;
   max-width: 1500px;
   .info {
     height: inherit;
@@ -28,7 +27,7 @@ export const Data = styled.div`
     z-index: 1;
     gap: 20px;
     color: white;
-    width: 90%;
+    width: 100%;
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.5),
       0 0 10px rgba(255, 255, 255, 0.5);
     h3 {
@@ -64,7 +63,5 @@ export const Data = styled.div`
         }
       }
     }
-  }
-  .img {
   }
 `;

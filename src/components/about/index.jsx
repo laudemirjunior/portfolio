@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../button";
 import { Container, MainContainer } from "./styles";
 
 export default function About() {
@@ -11,12 +10,12 @@ export default function About() {
           <p>
             Atualmente estou estudando Desenvolvimento Back-end na Kenzie
             Academy Brasil e busco uma oportunidade no mercado de trabalho como
-            Desenvolvedor.
+            desenvolvedor.
           </p>
         </div>
         <div className="img">
           <img
-            src="https://avatars.githubusercontent.com/u/85312375?v=4"
+            src="https://ca.slack-edge.com/TQZR39SET-U022091F97Z-5c8d69ae2dbd-512"
             alt="myImage"
           ></img>
         </div>
