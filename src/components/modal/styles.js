@@ -26,6 +26,7 @@ export const Container = styled.div`
   p {
     margin: 20px;
     color: black;
+    font-size: 1.2rem;
   }
   svg {
     position: absolute;

@@ -10,6 +10,6 @@ export const H1 = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  margin: 70px auto;
   font-weight: 400;
 `;

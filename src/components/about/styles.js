@@ -35,6 +35,10 @@ export const Container = styled.div`
       width: 200px;
       height: 200px;
       border-radius: 50%;
+      margin: 30px 0;
+      @media (min-width: 600px) {
+        margin: 0;
+      }
     }
   }
   @media (min-width: 600px) {
