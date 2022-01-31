@@ -16,7 +16,7 @@ export const portfolio = [
     description:
       "Trabalho em grupo em React, divemos algumas dificudlades na hora de elaborar as sprints e o backlog do produto, por nao termos muito conhecimento de qual seria a melhroa forma de fazer isso em react. Porem conseguimos vencer essas dificuldades e entregar o projeto.",
     title: "Habits",
-    vercel: "https://projeto-gestao-de-habitos-eta.vercel.app/",
+    site: "https://projeto-gestao-de-habitos-eta.vercel.app/",
     gitHub: "https://github.com/laudemirjunior/daily-health",
     hashtags: "React e Context API",
   },
@@ -25,7 +25,7 @@ export const portfolio = [
     description:
       "Rede para atendimentos remotos entre profissional/cliente na área da saúde mental e comportamental.",
     title: "Tranqyl",
-    vercel: "https://tranqly-capstone-osmg6nnsa-gabrielguti.vercel.app/",
+    site: "https://tranqly-capstone-osmg6nnsa-gabrielguti.vercel.app/",
     gitHub: "https://github.com/gabrielguti/tranqly-capstone",
     hashtags: "React, TypeScript e Context API",
   },
@@ -34,8 +34,7 @@ export const portfolio = [
     description:
       "Projeto de e-commerce para venda de hambúrgueres para cliente cadastrados, utilizando API criada com JSON.server",
     title: "Burguer",
-    vercel:
-      "https://react-entrega-s5-hamburgueria-2-0-com-typescript-jso-3yxq1da12.vercel.app/",
+    site: "https://react-entrega-s5-hamburgueria-2-0-com-typescript-jso-3yxq1da12.vercel.app/",
     gitHub:
       "https://github.com/laudemirjunior/react-entrega-s5-hamburgueria-2-0-com-typescript-json-server-laudemirjunior",
     hashtags: "React, TypeScript e Context-API",
