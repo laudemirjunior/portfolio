@@ -48,4 +48,12 @@ export const usingNow = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     name: "PostgreSQL",
   },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    name: "Material UI",
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    name: "Jest",
+  },
 ];
