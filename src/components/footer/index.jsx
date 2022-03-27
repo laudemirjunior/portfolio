@@ -38,7 +38,7 @@ export default function Footer() {
           <AiOutlineMail />
         </a>
       </div>
-      <div>@2020 Laudemir All Rights Reserved.</div>
+      <div>Laudemir - 2022</div>
     </Container>
   );
 }

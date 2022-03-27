@@ -14,7 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   img {
-    width: 100px;
+    width: 50px;
   }
   .techs {
     width: 100%;
@@ -33,10 +33,12 @@ export const Container = styled.div`
   .tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 12.5px;
     width: 100%;
     max-width: 900px;
+    font-size: 14px;
     div {
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;

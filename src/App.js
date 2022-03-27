@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
-import { useLocation } from "react-router";
-import Routes from "./routes";
+import Home from "./pages/home";
 import GlobalStyles from "./styles/";
 
 function App() {
-  const { pathname } = useLocation();
+  const pathname = window.location.pathname;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,7 +13,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Routes />
+      <Home />
       <Toaster position="bottom-left" />
     </>
   );

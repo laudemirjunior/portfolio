@@ -16,4 +16,8 @@ body {
 button {
     cursor: pointer;
 }
+svg:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
 `;

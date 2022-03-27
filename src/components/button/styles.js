@@ -11,7 +11,6 @@ export const ButtonStyled = styled.button`
   min-width: 100px;
   height: 30px;
   font-size: 20px;
-  margin: 30px auto;
   padding: 0 10px;
   a {
     color: ${(props) => (props.props ? "white" : "black")};

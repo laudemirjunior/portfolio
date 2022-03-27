@@ -50,8 +50,7 @@ export default function Contact() {
   return (
     <Container id="contact">
       <Title>Contato</Title>
-      {/* <p>Você está com dúvidas ou precisa relatar um problema o site</p>
-      <Separator /> */}
+
       <form ref={form} onSubmit={handleSubmit(onSubmitFunction)}>
         <input
           placeholder="Digite seu nome"

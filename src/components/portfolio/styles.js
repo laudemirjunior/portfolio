@@ -1,60 +1,96 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
-  .projects {
-    width: 100%;
-    max-width: 1500px;
-    margin: auto;
-  }
-  .project {
-    width: 90%;
-    margin: 60px auto;
+export const Container = styled.div`
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .pagination {
     display: flex;
-    gap: 50px;
+    margin: 10px auto;
+    gap: 10px;
+    svg {
+      color: white;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .page {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      height: 25px;
+      color: white;
+      border: 1px solid white;
+      font-weight: 600;
+    }
+  }
+`;
+
+export const Cards = styled.div`
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .ContainerCards {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    width: 90%;
+    gap: 10px;
+  }
+  p {
+    color: white;
+    margin: 20px 0;
+    font-size: 30px;
+  }
+`;
+
+export const Card = styled.div`
+  height: 230px;
+  width: 300px;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .infos {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-    @media (min-width: 600px) {
-      flex-direction: row;
-      div {
-        text-align: left;
-      }
-      :nth-child(even) {
-        flex-direction: row-reverse;
-        div {
-          text-align: right;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 5px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    div {
+      display: flex;
+      a {
+        margin: 0 10px;
+        button {
         }
       }
     }
   }
-  img {
-    width: 100%;
-    max-width: 350px;
-    min-width: 260px;
-    max-height: 250px;
-  }
-  .infos {
+  &:hover .infos,
+  :hover {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .links {
-    font-size: 30px;
-    svg {
-      margin: 5px;
-      cursor: pointer;
-    }
-    a {
-      color: black;
-    }
-  }
-  .more {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    transition: 0.01s ease-in;
   }
 `;

@@ -3,14 +3,16 @@ import { Container, MainContainer } from "./styles";
 
 export default function About() {
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <Container>
         <div className="info">
-          <h1>No momento</h1>
+          <h1>Sobre mim</h1>
           <p>
-            Atualmente estou estudando Desenvolvimento Back-end na Kenzie
-            Academy Brasil e busco uma oportunidade no mercado de trabalho como
-            desenvolvedor.
+            Sempre fui apaixonado por tecnologia, mas nunca havia pensado em ter
+            uma carreira na área até que me surgiu a oportunidade para estudar
+            Desenvolvimento Full Stack na Kenzie Academy Brasil em 2021. Então
+            iniciei uma mudança de área profissional para TI. Estou-me inserindo
+            no mercado de desenvolvimento, buscando uma oportunidade na área.
           </p>
         </div>
         <div className="img">
