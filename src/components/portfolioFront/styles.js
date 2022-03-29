@@ -1,36 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  margin: auto;
+export const ContainerFrontEnd = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .pagination {
-    display: flex;
-    margin: 10px auto;
-    gap: 10px;
-    svg {
-      color: white;
-      font-size: 25px;
-      cursor: pointer;
-    }
-    .page {
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25px;
-      height: 25px;
-      color: white;
-      border: 1px solid white;
-      font-weight: 600;
-    }
-  }
+  background-color: black;
 `;
 
 export const Cards = styled.div`
-  background-color: black;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -43,8 +21,11 @@ export const Cards = styled.div`
     max-width: 940px;
     width: 90%;
     gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  p {
+  h1 {
     color: white;
     margin: 20px 0;
     font-size: 30px;
@@ -53,11 +34,13 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   height: 230px;
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
   .infos {
     display: none;
     justify-content: space-around;

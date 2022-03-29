@@ -1,20 +1,56 @@
-import Habits from "../assets/images/habits.png";
-import Tranqyl from "../assets/images/tranqyl.png";
-import Shop from "../assets/images/shop.png";
-import Burguer from "../assets/images/burguer.png";
-import Hamburgueria from "../assets/images/hamburgueria.png";
-import Lig4 from "../assets/images/lig-4.png";
-import DoItPurple from "../assets/images/do-it-purple.png";
-import AdministracaoDeEventos from "../assets/images/administracao-de-eventos.png";
-import Caravan from "../assets/images/caravan.png";
-import Techno from "../assets/images/techno.png";
-import Disney from "../assets/images/disney.png";
-import DoItVanilla from "../assets/images/do-it-vanilla.png";
-import TowerOfHanoi from "../assets/images/torre-of-hanoi.png";
-import Maze from "../assets/images/maze.png";
-import Animes from "../assets/images/animes.png";
+import Covid from "../assets/images/front/covid.png";
+import Burgeriaz from "../assets/images/front/burgeriaz.png";
+import Delc from "../assets/images/front/delc.png";
+import Renek from "../assets/images/front/renek.png";
+import Disney from "../assets/images/front/disney.png";
+import Habits from "../assets/images/front/habits.png";
+import Caravan from "../assets/images/front/caravan.png";
+import Techno from "../assets/images/front/techno.png";
+import Tranqyl from "../assets/images/front/tranqyl.png";
+import Shop from "../assets/images/front/shop.png";
+import Burguer from "../assets/images/front/burguer.png";
+import Hamburgueria from "../assets/images/front/hamburgueria.png";
+import Animes from "../assets/images/front/animes.png";
+import DoItPurple from "../assets/images/front/do-it-purple.png";
+import AdministracaoDeEventos from "../assets/images/front/administracao-de-eventos.png";
+import DoItVanilla from "../assets/images/front/do-it-vanilla.png";
+import Lig4 from "../assets/images/front/lig-4.png";
+import TowerOfHanoi from "../assets/images/front/torre-of-hanoi.png";
+import Maze from "../assets/images/front/maze.png";
 
-export const portfolio = [
+export const databaseFront = [
+  {
+    img: Covid,
+    description: "",
+    title: "Covid",
+    site: "https://covid19-nu-six.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/covid19",
+    hashtags: "",
+  },
+  {
+    img: Burgeriaz,
+    description: "",
+    title: "Burgeriaz",
+    site: "https://burgeriaz-two.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/burgeriaz",
+    hashtags: "",
+  },
+  {
+    img: Delc,
+    description: "",
+    title: "Delc",
+    site: "https://delc.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/delc",
+    hashtags: "",
+  },
+  {
+    img: Renek,
+    description: "",
+    title: "Renek",
+    site: "https://renek.vercel.app/",
+    gitHub: "https://github.com/laudemirjunior/renek",
+    hashtags: "",
+  },
   {
     img: Disney,
     description: "",

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const H1 = styled.h1`
+export const ContainerTitle = styled.h1`
   background-color: transparent;
   color: ${(props) => (props.props ? "white" : "black")};
   border: 4px solid ${(props) => (props.props ? "white" : "black")};

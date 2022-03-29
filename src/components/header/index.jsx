@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import Menu from "../menu";
-import { Container, HeaderStyled, LogoBox, NavBox, Hamburguer } from "./styles";
+import {
+  ContainerHeader,
+  HeaderStyled,
+  LogoBox,
+  NavBox,
+  Hamburguer,
+} from "./styles";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
@@ -26,26 +32,26 @@ export default function Header() {
 
   return (
     <>
-      <Container vis={vis}>
-        <HeaderStyled>
+      <ContainerHeader vis={vis}>
+        <div>
           <div>
-            <LogoBox>
+            <div className="header__logo">
               <img src={logo} alt="logo" />
-            </LogoBox>
+            </div>
           </div>
-          <NavBox>
+          <div className="header__links">
             <a href="#about">Sobre mim</a>
             <a href="#skills">Habilidades</a>
             <a href="#portfolio">Portfólio</a>
-            <a className="dif" href="/#contact">
+            <a className="header__button" href="/#contact">
               CONTATE-ME
             </a>
-          </NavBox>
-          <Hamburguer onClick={change}>
+          </div>
+          <div className="hamburger" onClick={change}>
             {show ? <FaTimes /> : <FaBars />}
-          </Hamburguer>
-        </HeaderStyled>
-      </Container>
+          </div>
+        </div>
+      </ContainerHeader>
       {show ? <Menu /> : null}
     </>
   );

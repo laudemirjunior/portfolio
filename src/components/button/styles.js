@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ButtonStyled = styled.button`
+export const ContainerButton = styled.button`
   background-color: transparent;
   color: ${(props) => (props.props ? "white" : "black")};
   border-style: none solid;

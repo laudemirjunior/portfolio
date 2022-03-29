@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContainerModal = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  .card {
+  .modal__card {
     width: 90%;
     max-width: 400px;
     min-height: 240px;

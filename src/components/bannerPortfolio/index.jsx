@@ -1,11 +1,11 @@
 import React from "react";
 import Title from "../title";
-import { Container } from "./styles";
+import { ContainerPortfolioBanner } from "./styles";
 
-export default function BannerPortfolio() {
+export default function PortfolioBanner() {
   return (
-    <Container>
+    <ContainerPortfolioBanner>
       <Title children="PORTFÓLIO" props={true}></Title>
-    </Container>
+    </ContainerPortfolioBanner>
   );
 }

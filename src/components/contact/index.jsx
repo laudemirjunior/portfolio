@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { Container } from "./styles";
+import { ContainerContact } from "./styles";
 import Button from "../button";
 import Title from "../title";
 import toast from "react-hot-toast";
@@ -48,9 +48,8 @@ export default function Contact() {
   }
 
   return (
-    <Container id="contact">
+    <ContainerContact id="contact">
       <Title>Contato</Title>
-
       <form ref={form} onSubmit={handleSubmit(onSubmitFunction)}>
         <input
           placeholder="Digite seu nome"
@@ -75,6 +74,6 @@ export default function Contact() {
         <span>{errors.text?.message}</span>
         <Button type="submit" children="Enviar" props={false} />
       </form>
-    </Container>
+    </ContainerContact>
   );
 }

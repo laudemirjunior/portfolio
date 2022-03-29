@@ -1,11 +1,11 @@
 import React from "react";
-import { Container, MainContainer } from "./styles";
+import { ContainerAbout } from "./styles.js";
 
 export default function About() {
   return (
-    <MainContainer id="about">
-      <Container>
-        <div className="info">
+    <ContainerAbout id="about">
+      <div>
+        <div className="about__info">
           <h1>Sobre mim</h1>
           <p>
             Sempre fui apaixonado por tecnologia, mas nunca havia pensado em ter
@@ -15,13 +15,13 @@ export default function About() {
             no mercado de desenvolvimento, buscando uma oportunidade na área.
           </p>
         </div>
-        <div className="img">
+        <div className="about__image">
           <img
             src="https://ca.slack-edge.com/TQZR39SET-U022091F97Z-5c8d69ae2dbd-512"
             alt="myImage"
           ></img>
         </div>
-      </Container>
-    </MainContainer>
+      </div>
+    </ContainerAbout>
   );
 }

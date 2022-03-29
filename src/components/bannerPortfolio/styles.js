@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Banner from "../../assets/images/banner-2.png";
+import Banner from "../../assets/images/banner2.png";
 
-export const Container = styled.div`
+export const ContainerPortfolioBanner = styled.div`
   width: 100%;
   height: 320px;
   background-image: url(${Banner});

@@ -1,26 +1,24 @@
 import React from "react";
 import Title from "../title";
-import { Container, MainContainer } from "./styles";
+import { ContainerSkills } from "./styles";
 import { abilities } from "../../services/abilities";
 
 export default function Skills() {
   return (
-    <MainContainer id="skills">
-      <Container>
+    <ContainerSkills id="skills">
+      <div>
         <Title>HABILIDADES</Title>
-        <div className="techs">
-          <div className="tech">
-            {abilities.map((item) => {
-              return (
-                <div>
-                  <img src={item.img} alt={item.name} />
-                  <h4>{item.name}</h4>
-                </div>
-              );
-            })}
-          </div>
+        <div className="skills__techs">
+          {abilities.map((item) => {
+            return (
+              <div>
+                <img src={item.img} alt={item.name} />
+                <h4>{item.name}</h4>
+              </div>
+            );
+          })}
         </div>
-      </Container>
-    </MainContainer>
+      </div>
+    </ContainerSkills>
   );
 }

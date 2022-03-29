@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./styles";
+import { ContainerFooter } from "./styles";
 import { BsChevronDoubleUp } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -11,7 +11,7 @@ export default function Footer() {
   }
 
   return (
-    <Container>
+    <ContainerFooter>
       <div className="back">
         <p onClick={scrollTop}>
           <BsChevronDoubleUp />
@@ -39,6 +39,6 @@ export default function Footer() {
         </a>
       </div>
       <div>Laudemir - 2022</div>
-    </Container>
+    </ContainerFooter>
   );
 }

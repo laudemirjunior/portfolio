@@ -1,18 +1,18 @@
 import React from "react";
-import { Container, Data } from "./styles";
+import { ContainerBanner } from "./styles";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import Button from "../button";
 
 export default function Banner() {
   return (
-    <Container id="banner">
-      <Data>
-        <div className="info" id="banner">
+    <ContainerBanner id="banner">
+      <div className="banner__data">
+        <div className="banner__info" id="banner">
           <h3>Olá, Eu sou</h3>
           <h1>Laudemir do Nascimento Junior</h1>
           <h5>Desenvolvedor Full Stack</h5>
-          <div className="contact">
+          <div className="banner__contact">
             <div>
               <a
                 href="https://github.com/laudemirjunior"
@@ -22,7 +22,6 @@ export default function Banner() {
                 <FaGithubSquare />
               </a>
             </div>
-
             <div>
               <a href="https://www.linkedin.com/in/nlaudemir/">
                 <FaLinkedin />
@@ -45,8 +44,7 @@ export default function Banner() {
             </a>
           </Button>
         </div>
-        <div className="img"></div>
-      </Data>
-    </Container>
+      </div>
+    </ContainerBanner>
   );
 }
