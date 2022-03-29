@@ -4,7 +4,7 @@ import { ContainerPortfolioBanner } from "./styles";
 
 export default function PortfolioBanner() {
   return (
-    <ContainerPortfolioBanner>
+    <ContainerPortfolioBanner id="portfolio">
       <Title children="PORTFÓLIO" props={true}></Title>
     </ContainerPortfolioBanner>
   );

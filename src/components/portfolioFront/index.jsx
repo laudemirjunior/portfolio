@@ -13,7 +13,7 @@ export default function PortfolioFront() {
   const [finish, setFinish] = useState(6);
 
   return (
-    <ContainerFrontEnd id="portfolio">
+    <ContainerFrontEnd>
       <Cards>
         <h1>Projetos Front End</h1>
         <div className="ContainerCards">
