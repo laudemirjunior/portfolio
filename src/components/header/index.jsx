@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import Menu from "../menu";
-import {
-  ContainerHeader,
-  HeaderStyled,
-  LogoBox,
-  NavBox,
-  Hamburguer,
-} from "./styles";
+import { ContainerHeader } from "./styles";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {

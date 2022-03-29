@@ -15,6 +15,15 @@ export default function PortfolioBack() {
     arrow[index].classList.toggle("back__down");
   };
 
+  const remove = () => {
+    const btn = document.querySelectorAll(".back__open");
+    const arrow = document.querySelectorAll(".back__direction");
+    btn.forEach((_, index) => {
+      btn[index].classList.add("back__hidden");
+      arrow[index].classList.remove("back__down");
+    });
+  };
+
   return (
     <ContainerBack>
       <h1>Projetos Back End</h1>
@@ -32,7 +41,7 @@ export default function PortfolioBack() {
                     ? item.description
                     : "Esta aplicação ainda não possui uma descrição."}
                 </p>
-                {"   "}
+                <p>{item.hashtags}</p>
                 <a href={item.gitHub} target="_blank" rel="noreferrer">
                   GitHub
                 </a>
@@ -48,6 +57,7 @@ export default function PortfolioBack() {
         finish={finish}
         setFinish={setFinish}
         perPage={6}
+        remove={remove}
       />
     </ContainerBack>
   );

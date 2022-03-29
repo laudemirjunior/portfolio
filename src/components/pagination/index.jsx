@@ -7,17 +7,9 @@ export default function Pagination({
   finish,
   setFinish,
   perPage,
+  remove,
 }) {
   const pagination = Math.ceil(database.length / perPage);
-
-  const remove = () => {
-    const btn = document.querySelectorAll(".open");
-    const arrow = document.querySelectorAll(".direction");
-    btn.forEach((_, index) => {
-      btn[index].classList.add("hidden");
-      arrow[index].classList.remove("down");
-    });
-  };
 
   const change = (index) => {
     setStart(index * perPage);

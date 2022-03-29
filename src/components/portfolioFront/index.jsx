@@ -3,7 +3,6 @@ import { databaseFront } from "../../services/databaseFront";
 import { ContainerFrontEnd, Cards, Card } from "./styles";
 import { BsInfoCircle } from "react-icons/bs";
 import Button from "../button";
-import BannerPortfolio from "../bannerPortfolio";
 import Modal from "../modal";
 import Pagination from "../pagination";
 

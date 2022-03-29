@@ -21,7 +21,7 @@ export const ContainerPagination = styled.div`
     border: 1px solid white;
     font-weight: 600;
     :hover {
-      background-color: #ffffffaa;
+      opacity: 0.7;
     }
   }
 `;

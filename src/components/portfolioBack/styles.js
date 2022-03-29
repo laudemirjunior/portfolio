@@ -15,15 +15,21 @@ export const ContainerBack = styled.div`
         color: white;
         cursor: pointer;
         border: 1px solid white;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        margin-left: 20px;
       }
       div {
         background-color: white;
         margin: 0;
         padding: 5px;
-
         width: 100%;
         p {
           color: black;
+          margin: 5px 0;
         }
         a {
           color: black;
@@ -32,8 +38,9 @@ export const ContainerBack = styled.div`
           display: flex;
           align-items: center;
           justify-content: center;
+          margin: 5px 0;
           :hover {
-            background-color: #000000aa;
+            opacity: 0.7;
           }
         }
         .back__down {
