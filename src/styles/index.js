@@ -10,6 +10,9 @@ box-sizing: border-box;
 text-decoration: none;
 font-family: 'Montserrat', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
     background-color: #D7D7D7;
 }

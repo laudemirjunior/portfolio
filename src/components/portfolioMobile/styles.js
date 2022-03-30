@@ -40,10 +40,10 @@ export const ContainerMobile = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
     .mobile__show {
-      width: 100%;
-      max-width: 450px;
-      max-height: 100vh;
+      width: auto;
+      height: 100%;
       :hover {
         filter: opacity(1);
       }

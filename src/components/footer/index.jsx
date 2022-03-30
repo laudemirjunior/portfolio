@@ -38,7 +38,7 @@ export default function Footer() {
           <AiOutlineMail />
         </a>
       </div>
-      <div>2022</div>
+      <p>2022</p>
     </ContainerFooter>
   );
 }
