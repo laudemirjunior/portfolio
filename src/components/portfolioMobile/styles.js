@@ -6,24 +6,16 @@ export const ContainerMobile = styled.div`
   align-items: center;
   flex-direction: column;
   background-color: black;
+  text-align: center;
+  color: white;
   .mobile__slider {
     max-width: 940px;
     width: 80%;
-    margin: auto;
   }
-  .mobile__button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
+  h1,
+  h3,
   p {
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  h1 {
-    color: white;
-    text-align: center;
+    margin: 20px;
   }
   img {
     width: 100%;
@@ -34,7 +26,7 @@ export const ContainerMobile = styled.div`
       filter: opacity(0.8);
     }
   }
-  .image {
+  .mobile__image {
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -48,7 +40,7 @@ export const ContainerMobile = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-    .show {
+    .mobile__show {
       width: 100%;
       max-width: 450px;
       max-height: 100vh;

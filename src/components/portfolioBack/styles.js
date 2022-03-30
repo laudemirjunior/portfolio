@@ -5,6 +5,7 @@ export const ContainerBack = styled.div`
   h1 {
     color: white;
     text-align: center;
+    padding: 20px 0;
   }
   .back__accordions {
     max-width: 940px;
@@ -27,6 +28,7 @@ export const ContainerBack = styled.div`
         margin: 0;
         padding: 5px;
         width: 100%;
+
         p {
           color: black;
           margin: 5px 0;
@@ -43,10 +45,10 @@ export const ContainerBack = styled.div`
             opacity: 0.7;
           }
         }
-        .back__down {
-          transform: rotate(180deg);
-        }
       }
+    }
+    .back__down {
+      transform: rotate(180deg);
     }
     .back__hidden {
       display: none;

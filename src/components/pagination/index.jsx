@@ -7,26 +7,22 @@ export default function Pagination({
   finish,
   setFinish,
   perPage,
-  remove,
 }) {
   const pagination = Math.ceil(database.length / perPage);
 
   const change = (index) => {
     setStart(index * perPage);
     setFinish((index + 1) * perPage);
-    remove();
   };
 
   const left = () => {
     setStart(start - perPage);
     setFinish(finish - perPage);
-    remove();
   };
 
   const right = () => {
     setStart(start + perPage);
     setFinish(finish + perPage);
-    remove();
   };
 
   return (
@@ -40,6 +36,7 @@ export default function Pagination({
       {Array.from({ length: pagination }).map((_, index) => {
         return (
           <div
+            key={index}
             className="pagination__page"
             onClick={() => change(index)}
             style={

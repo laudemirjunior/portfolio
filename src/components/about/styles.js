@@ -5,10 +5,10 @@ export const ContainerAbout = styled.div`
   background-color: black;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 40px 0;
   div {
     width: 90%;
-    min-height: 200px;
+    min-height: 250px;
     max-width: 1500px;
     display: grid;
     grid-template-columns: 1fr;
@@ -19,7 +19,7 @@ export const ContainerAbout = styled.div`
       h1,
       p {
         color: white;
-        margin: 15px 0;
+        margin: 20px 0;
       }
     }
     .about__image {

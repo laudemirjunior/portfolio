@@ -50,15 +50,14 @@ export default function PortfolioMobile() {
       <div className="mobile__slider">
         {databaseMobile.slice(start, finish).map((item, index) => (
           <div key={index}>
-            <h1>{item.name} Mobile</h1>;
+            <h1>Projetos Mobile</h1>
+            <h3>{item.name}</h3>
             <p>
               {item.description
                 ? item.description
                 : "Esta aplicação ainda não possui uma descrição."}
             </p>
-            <div className="mobile__button">
-              <Button children="GitHub" />
-            </div>
+            <Button children="GitHub" />
             <Slider {...settings}>
               {item.img.map((image, index) => (
                 <img
@@ -84,8 +83,8 @@ export default function PortfolioMobile() {
         perPage={1}
       />
       {show && (
-        <div className="image" onClick={() => setShow(!show)}>
-          <img className="show" src={newImage} alt="" />
+        <div className="mobile__image" onClick={() => setShow(!show)}>
+          <img className="mobile__show" src={newImage} alt="" />
         </div>
       )}
     </ContainerMobile>

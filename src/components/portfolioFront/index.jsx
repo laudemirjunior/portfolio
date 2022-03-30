@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { databaseFront } from "../../services/databaseFront";
-import { ContainerFrontEnd, Cards, Card } from "./styles";
+import { ContainerFront } from "./styles";
 import { BsInfoCircle } from "react-icons/bs";
 import Button from "../button";
 import Modal from "../modal";
@@ -13,14 +13,17 @@ export default function PortfolioFront() {
   const [finish, setFinish] = useState(6);
 
   return (
-    <ContainerFrontEnd>
-      <Cards>
+    <ContainerFront>
+      <div className="front__container">
         <h1>Projetos Front End</h1>
-        <div className="ContainerCards">
+        <div className="front__cards">
           {databaseFront.slice(start, finish).map((item) => {
             return (
-              <Card style={{ backgroundImage: `url(${item.img})` }}>
-                <div className="infos">
+              <div
+                className="front__card"
+                style={{ backgroundImage: `url(${item.img})` }}
+              >
+                <div className="front__infos">
                   <h4>{item.title}</h4>
                   <h5>{item.hashtags}</h5>
                   <BsInfoCircle
@@ -38,12 +41,12 @@ export default function PortfolioFront() {
                     </a>
                   </div>
                 </div>
-              </Card>
+              </div>
             );
           })}
           {show && <Modal info={info} setShow={setShow} />}
         </div>
-      </Cards>
+      </div>
       <Pagination
         database={databaseFront}
         start={start}
@@ -52,6 +55,6 @@ export default function PortfolioFront() {
         setFinish={setFinish}
         perPage={6}
       />
-    </ContainerFrontEnd>
+    </ContainerFront>
   );
 }

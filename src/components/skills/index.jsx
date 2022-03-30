@@ -9,9 +9,9 @@ export default function Skills() {
       <div>
         <Title>HABILIDADES</Title>
         <div className="skills__techs">
-          {abilities.map((item) => {
+          {abilities.map((item, index) => {
             return (
-              <div>
+              <div key={index}>
                 <img src={item.img} alt={item.name} />
                 <h4>{item.name}</h4>
               </div>

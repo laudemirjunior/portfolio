@@ -1,6 +1,6 @@
 import { databaseBack } from "../../services/databaseBack";
 import { ContainerBack } from "./styles";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Pagination from "../pagination";
 
@@ -15,14 +15,14 @@ export default function PortfolioBack() {
     arrow[index].classList.toggle("back__down");
   };
 
-  const remove = () => {
+  useEffect(() => {
     const btn = document.querySelectorAll(".back__open");
     const arrow = document.querySelectorAll(".back__direction");
     btn.forEach((_, index) => {
       btn[index].classList.add("back__hidden");
       arrow[index].classList.remove("back__down");
     });
-  };
+  }, [start]);
 
   return (
     <ContainerBack>
@@ -57,7 +57,6 @@ export default function PortfolioBack() {
         finish={finish}
         setFinish={setFinish}
         perPage={6}
-        remove={remove}
       />
     </ContainerBack>
   );

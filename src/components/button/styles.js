@@ -12,6 +12,7 @@ export const ContainerButton = styled.button`
   height: 30px;
   font-size: 20px;
   padding: 0 10px;
+  margin: 20px 0;
   a {
     color: ${(props) => (props.props ? "white" : "black")};
   }
