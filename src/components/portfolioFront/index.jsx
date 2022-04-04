@@ -17,9 +17,10 @@ export default function PortfolioFront() {
       <div className="front__container">
         <h1>Projetos Front End</h1>
         <div className="front__cards">
-          {databaseFront.slice(start, finish).map((item) => {
+          {databaseFront.slice(start, finish).map((item, index) => {
             return (
               <div
+                key={index}
                 className="front__card"
                 style={{ backgroundImage: `url(${item.img})` }}
               >
